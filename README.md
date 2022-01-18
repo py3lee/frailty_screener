@@ -1,2 +1,5 @@
-# frailty_screener
-Frailty screener app
+# Frailty screener
+Prototype app to screen for frailty
+
+## status
+Work in progress
