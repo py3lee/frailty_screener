@@ -74,17 +74,22 @@ navbar = dbc.NavbarSimple(
 
 # --- APP LAYOUT --- #
 
-app.layout = dbc.Container(
-    fluid = True, 
+app.layout = html.Div(
+    id="app-content",
     children =[
-        navbar,
-        about.layout,
-        demographic.layout,
-        q1_input.layout,
-        q2_input.layout,
-        q3_input.layout,
-        q4_input.layout,
-        q5_input.layout
+        dbc.Container(
+            fluid = True, 
+            children =[
+                navbar,
+                about.layout,
+                demographic.layout,
+                q1_input.layout,
+                q2_input.layout,
+                q3_input.layout,
+                q4_input.layout,
+                q5_input.layout
+            ]
+        )
     ]
 )
 
